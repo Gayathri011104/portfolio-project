@@ -3,93 +3,432 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="Gayathri's web development portfolio showcasing projects and skills">
+  <title>Gayathri | Web Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
 <body>
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
   <!-- Header Section -->
   <header>
     <div class="container">
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
+      <h1><a href="index.html" aria-label="Gayathri's Portfolio">Gayathri</a></h1>
+      <nav aria-label="Main navigation">
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container">
-      <img src="https://sl.bing.net/jneXbwbnbEq" alt="Profile Picture" class="profile-img">
-      <h2>Hi, I'm Gayathri</h2>
-      <p>A passionate web developer</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I'm a web developer with experience in building responsive and user-friendly websites. I love coding and solving problems.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="assets/project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Description of Project 1.</p>
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <img src="assets/profile-photo.jpg" alt="Gayathri" class="profile-img">
+        <h2>Hi, I'm Gayathri</h2>
+        <p>Full-Stack Web Developer & UI/UX Enthusiast</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary-btn">View My Work</a>
+          <a href="#contact" class="btn secondary-btn">Get In Touch</a>
         </div>
-        <div class="project-card">
-          <img src="assets/project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Description of Project 2.</p>
+        <div class="social-links hero-social">
+          <a href="https://github.com/" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+          <a href="https://dribbble.com/" aria-label="Dribbble Profile"><i class="fab fa-dribbble"></i></a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Responsive Design</li>
-      </ul>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Hello! I'm a passionate full-stack web developer with 3+ years of experience creating responsive and user-friendly websites and web applications. I specialize in modern JavaScript frameworks and have a keen eye for design.</p>
+            <p>My journey in web development began during my computer science studies, where I discovered my passion for creating intuitive digital experiences. Since then, I've worked on various projects ranging from e-commerce platforms to complex web applications.</p>
+            <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor photography.</p>
+            <div class="about-buttons">
+              <a href="assets/resume.pdf" class="btn secondary-btn" download>Download Resume <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <h3>Education</h3>
+                <p>B.Tech in Computer Science</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h3>Experience</h3>
+                <p>3+ Years in Web Development</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Bangalore, India</p>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-language"></i>
+              <div>
+                <h3>Languages</h3>
+                <p>English, Tamil, Hindi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-filter">
+          <button class="project-tag active" data-category="all">All</button>
+          <button class="project-tag" data-category="web">Web Apps</button>
+          <button class="project-tag" data-category="ui">UI/UX</button>
+          <button class="project-tag" data-category="mobile">Mobile</button>
+        </div>
+        <div class="project-grid">
+          <div class="project-card" data-category="web">
+            <img src="assets/project1.jpg" alt="E-commerce Website">
+            <h3>E-commerce Platform</h3>
+            <p>A full-featured online store with product catalog, shopping cart, and secure payment integration.</p>
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="live-link" aria-label="View live project">Live Demo</a>
+              <a href="#" class="github-link" aria-label="View source code on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="ui">
+            <img src="assets/project2.jpg" alt="Dashboard UI Design">
+            <h3>Analytics Dashboard</h3>
+            <p>A responsive dashboard UI with interactive charts and data visualization components.</p>
+            <div class="project-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="live-link" aria-label="View live project">Live Demo</a>
+              <a href="#" class="github-link" aria-label="View source code on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="mobile">
+            <img src="assets/project3.jpg" alt="Task Management App">
+            <h3>Task Management App</h3>
+            <p>A mobile-first application for managing tasks with categorization and reminder features.</p>
+            <div class="project-tags">
+              <span>React Native</span>
+              <span>Firebase</span>
+              <span>Redux</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="live-link" aria-label="View live project">Live Demo</a>
+              <a href="#" class="github-link" aria-label="View source code on GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-card" data-category="web">
+            <img src="assets/project4.jpg" alt="Blog Platform">
+            <h3>Blog Platform</h3>
+            <p>A content management system with rich text editing, categories, and user authentication.</p>
+            <div class="project-tags">
+              <span>Vue.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="live-link" aria-label="View live project">Live Demo</a>
+              <a href="#" class="github-link" aria-label="View source code on GitHub">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-wrapper">
+          <div class="skills-category">
+            <h3>Frontend Development</h3>
+            <div class="skills-container">
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>HTML5/CSS3</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="95"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>JavaScript</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>React</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Vue.js</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Backend Development</h3>
+            <div class="skills-container">
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Node.js</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>Express</span>
+                  <span>80%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>MongoDB</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="75"></div>
+                </div>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-info">
+                  <span>SQL</span>
+                  <span>70%</span>
+                </div>
+                <div class="progress-container">
+                  <div class="progress-bar" data-progress="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skills-grid">
+              <div class="skill-item">Git</div>
+              <div class="skill-item">GitHub</div>
+              <div class="skill-item">VS Code</div>
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Webpack</div>
+              <div class="skill-item">SASS</div>
+              <div class="skill-item">Tailwind CSS</div>
+              <div class="skill-item">RESTful APIs</div>
+              <div class="skill-item">Responsive Design</div>
+              <div class="skill-item">UX/UI Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="container">
+        <h2>Client Testimonials</h2>
+        <div class="testimonial-slider">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Gayathri created an outstanding website for our business. Her attention to detail and technical expertise helped us achieve exactly what we were looking for. The website is not only beautiful but also performs exceptionally well."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="assets/client1.jpg" alt="Client 1">
+              <div>
+                <h3>Rahul Sharma</h3>
+                <p>CEO, TechStartup</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Working with Gayathri was a fantastic experience. She understood our requirements perfectly and delivered a product that exceeded our expectations. Her communication throughout the project was excellent."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="assets/client2.jpg" alt="Client 2">
+              <div>
+                <h3>Priya Patel</h3>
+                <p>Marketing Director, CreativeSolutions</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"Gayathri's technical skills are top-notch. She built us a complex web application that has significantly improved our business processes. Her problem-solving abilities and dedication make her an exceptional developer."</p>
+            </div>
+            <div class="testimonial-author">
+              <img src="assets/client3.jpg" alt="Client 3">
+              <div>
+                <h3>Amit Kumar</h3>
+                <p>CTO, EnterpriseApp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:gayathri@example.com">gayathri@example.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Bangalore, India</p>
+              </div>
+            </div>
+            <div class="social-links contact-social">
+              <a href="https://github.com/" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+              <a href="https://twitter.com/" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+              <a href="https://dribbble.com/" aria-label="Dribbble Profile"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2023 journal. All rights reserved.</p>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>Gayathri</h3>
+          <p>Web Developer & UI/UX Designer</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Subscribe to Newsletter</h4>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Gayathri. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Theme toggle -->
+  <button class="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
