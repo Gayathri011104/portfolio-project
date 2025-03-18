@@ -159,7 +159,7 @@ nav ul li a:hover::after {
   cursor: pointer;
 }
 
-/* Hero section */
+
 #hero {
   padding: 150px 0 100px;
   text-align: center;
@@ -201,7 +201,6 @@ nav ul li a:hover::after {
   margin-top: 20px;
 }
 
-/* Section styles */
 section {
   padding: 80px 0;
 }
@@ -224,7 +223,6 @@ section h2::after {
   transform: translateX(-50%);
 }
 
-/* About section */
 #about {
   background-color: var(--bg-color);
 }
